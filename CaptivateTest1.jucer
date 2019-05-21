@@ -35,6 +35,13 @@
             file="Source/ComponentDMXSlider.cpp"/>
       <FILE id="z1QZ0T" name="ComponentDMXSlider.h" compile="0" resource="0"
             file="Source/ComponentDMXSlider.h"/>
+      <FILE id="vLVzWA" name="ComponentGraph.cpp" compile="1" resource="0"
+            file="Source/ComponentGraph.cpp"/>
+      <FILE id="n81e21" name="ComponentGraph.h" compile="0" resource="0"
+            file="Source/ComponentGraph.h"/>
+      <FILE id="TsmKBy" name="ComponentLfo.cpp" compile="1" resource="0"
+            file="Source/ComponentLfo.cpp"/>
+      <FILE id="VhXDjD" name="ComponentLfo.h" compile="0" resource="0" file="Source/ComponentLfo.h"/>
       <FILE id="ev3kna" name="ComponentPad.cpp" compile="1" resource="0"
             file="Source/ComponentPad.cpp"/>
       <FILE id="RBON0j" name="ComponentPad.h" compile="0" resource="0" file="Source/ComponentPad.h"/>

@@ -1,8 +1,8 @@
 /*
   ==============================================================================
 
-    GuiModulation.h
-    Created: 19 May 2019 10:47:54am
+    ComponentLfo.h
+    Created: 20 May 2019 10:52:00pm
     Author:  Spenser
 
   ==============================================================================
@@ -11,22 +11,25 @@
 #pragma once
 
 #include "../JuceLibraryCode/JuceHeader.h"
-#include "ComponentLfo.h"
+#include "ComponentGraph.h"
 
 //==============================================================================
 /*
 */
-class GuiModulation    : public Component
+class ComponentLfo    : public Component
 {
 public:
-    GuiModulation();
-    ~GuiModulation();
+    ComponentLfo();
+    ~ComponentLfo();
 
     void paint (Graphics&) override;
     void resized() override;
 
 private:
-	ComponentLfo componentLfo1;
+	Slider waveTypeSlider;
+	Slider waveAmplitudeSlider;
+	Label lfoLabel;
+	ComponentGraph lfoGraph;
 
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (GuiModulation)
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (ComponentLfo)
 };

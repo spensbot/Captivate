@@ -10,13 +10,12 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "GuiModulation.h"
+#include "CaptivateParams.h"
 
 //==============================================================================
 GuiModulation::GuiModulation()
 {
-    // In your constructor, you should add any child components, and
-    // initialise any special settings that your component needs.
-
+	addAndMakeVisible(componentLfo1);
 }
 
 GuiModulation::~GuiModulation()
@@ -45,7 +44,11 @@ void GuiModulation::paint (Graphics& g)
 
 void GuiModulation::resized()
 {
-    // This method is where you should set the bounds of any child
-    // components that your component contains..
+	Grid grid;
+	using Track = Grid::TrackInfo;
+	grid.templateRows = { Track(1_fr) };
+	grid.templateColumns = { Track(1_fr), Track(1_fr), Track(1_fr), Track(1_fr) };
+	grid.items = { GridItem(componentLfo1) };
+	grid.performLayout(getLocalBounds().reduced(PADDING_3));
 
 }

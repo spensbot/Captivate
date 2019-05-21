@@ -29,6 +29,9 @@ const float DECK_HEIGHT_RATIO = .5;
 const int NUM_PADS = 6;
 const int NUM_DMX_SLIDERS = 24;
 
+//Math Constants
+const float  PI_F = 3.14159265358979f;
+
 //STRINGS
 const String APP_NAME = "Captivate";
 const String APP_CREATOR = "Saling To Mars";
